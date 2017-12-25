@@ -1,4 +1,4 @@
-package com.theleafapps.pro.DataHelper;
+package com.theleafapps.pro.Helper;
 
 import com.theleafapps.pro.R;
 import com.theleafapps.pro.model.Element;
@@ -34,7 +34,6 @@ public class TourGuideDataHelper {
                 R.drawable.fashion));
         events.add(new Element("Adventure Carnival",
                 "Decathlon organising Adventure Carnival !! \n" +
-                        "\n" +
                         "Participate in more than 20 adventure activities like Paintball, Wall Climbing, ATV ride, Horse riding, Slack line, Sumo fight, etc. and many more adventurous activities in row !!",
                 R.drawable.adventure));
         return events;
