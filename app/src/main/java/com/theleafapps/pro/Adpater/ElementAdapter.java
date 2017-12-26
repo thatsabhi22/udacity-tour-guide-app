@@ -71,16 +71,24 @@ public class ElementAdapter extends ArrayAdapter<Element> {
 
         // Get the element title from current Element object and
         // set this text on the elementTitle TextView
-        elementDescription.setText(StringEllipsizehHelper.ellipsize(currentElement.getElementDescription(),100));
+        elementDescription.setText(StringEllipsizehHelper.ellipsize(currentElement.getElementDescription(), 100));
 
         // Find the ImageView in the list_item.xml layout with the ID list_image
         ImageView wordImage = (ImageView) listItemView.findViewById(R.id.element_image);
 
         //If image resource not found visibility of the ImageView set to GONE
-        if (currentElement.getmImageResourceId() == 0)
+        if (currentElement.getmImageResourceId() == 0) {
             wordImage.setVisibility(View.GONE);
-        else
+        } else {
             wordImage.setImageResource(currentElement.getmImageResourceId());
+        }
+
+        // Find the ImageView in the list_item.xml layout with the ID list_image
+        TextView elementLocation = (TextView) listItemView.findViewById(R.id.element_location);
+
+        // Get the element location from current Element object and
+        // set this text on the elementLocation TextView
+        elementLocation.setText(currentElement.getLocation().toString());
 
         return listItemView;
     }

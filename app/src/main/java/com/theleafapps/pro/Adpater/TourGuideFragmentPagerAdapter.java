@@ -13,7 +13,7 @@ import com.theleafapps.pro.Fragments.RestaurantFragment;
  * Created by aviator on 25/12/17.
  */
 
-public class TourGuideFragmentPagerAdapter extends FragmentPagerAdapter{
+public class TourGuideFragmentPagerAdapter extends FragmentPagerAdapter {
 
     private String tabTitles[] = new String[]{"Events", "Restaurant", "Religious", "Historical"};
 

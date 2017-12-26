@@ -3,4 +3,5 @@
     <string name="app_title">Indore Tour Guide</string>
     <string name="element_name"><![CDATA[<element_name>]]></string>
     <string name="element_description"><![CDATA[<element_description>]]></string>
+    <string name="element_location">element_location</string>
 </resources>

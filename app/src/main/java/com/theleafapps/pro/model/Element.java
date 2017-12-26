@@ -26,16 +26,24 @@ public class Element {
     private String elementDescription;
 
     /**
+     * List Item supporting location for the element
+     * with Location Class
+     */
+    private Location location;
+
+    /**
      * Create a new Element object.
      *
      * @param elementTitle       title of the element in the element list
      * @param elementDescription description of the element in the element list
      * @param mImageResourceId   image Resource id for the image on the elementList
+     * @param location           location object for storing address of a place
      */
-    public Element(String elementTitle, String elementDescription, int mImageResourceId) {
+    public Element(String elementTitle, String elementDescription, int mImageResourceId, Location location) {
         this.elementTitle = elementTitle;
         this.elementDescription = elementDescription;
         this.mImageResourceId = mImageResourceId;
+        this.location = location;
     }
 
     /**
@@ -78,6 +86,20 @@ public class Element {
      */
     public void setElementDescription(String elementDescription) {
         this.elementDescription = elementDescription;
+    }
+
+    /**
+     * Get the Location of the List Item Element
+     */
+    public Location getLocation() {
+        return location;
+    }
+
+    /**
+     * Set the Location of the List Item Element
+     */
+    public void setLocation(Location location) {
+        this.location = location;
     }
 
     /**
