@@ -55,6 +55,7 @@ public class ElementAdapter extends ArrayAdapter<Element> {
                     inflate(R.layout.list_item, parent, false);
         }
 
+        // Get the current Element by position
         Element currentElement = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID element_title that
